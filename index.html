@@ -7,7 +7,7 @@
 
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="css/init.css"/>
+		<link rel="stylesheet" type="text/css" href="css/init.css" />
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<script src="js/utils/jquery.1.9.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/utils/swiper.min.js" type="text/javascript" charset="utf-8"></script>
@@ -15,7 +15,55 @@
 	</head>
 	<body>
 		<div class='header-container'>
-			fdgsd
+			<div class="header-logo">
+				<img class="logo" src="images/logo.png" alt="">
+				<img class="header-text" src="images/headertext.png" alt="">
+				<img class="menu-btn" src="images/menubtn.png" alt="">
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">slider1</div>
+					<div class="swiper-slide">slider2</div>
+					<div class="swiper-slide">slider3</div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-bullets" ></div>
+			</div>
+		</div>
+		<div class="home-container">
+			<div id="item1">
+				<div class="list">
+					<img src="images/server/self.png" alt="">
+					<div class="box">
+						<span>个人</span>
+						<div class="text">人才培养</div>
+					</div>
+				</div>
+				<div class="list">
+					<img src="images/server/university.png" alt="">
+					<div class="box">
+						<span>高校</span>
+						<div class="text">技术赋能</div>
+					</div>
+					
+				</div>
+				<div class="list">
+					<img src="images/server/enterprise.png" alt="">
+					<div class="box">
+						<span>政企</span>
+						<div class="text">产业研发</div>
+					</div>
+				</div>
+			</div>
+			<div id="item2">
+				<div class="title">热门课程</div>
+			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: 3000, //可选选项，自动滑动
+			pagination: '.swiper-pagination',
+			paginationType: 'bullets',
+		})
+	</script>
 </html>
