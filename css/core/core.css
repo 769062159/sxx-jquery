@@ -100,5 +100,6 @@
 .core .img2{
     z-index: 0;
     position: absolute;
-    right: 0;
+    right: -1rem;
+    width: 90%;
 }
