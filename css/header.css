@@ -1,5 +1,127 @@
 .header-container{
   width: 100%;
   height: 1.08rem;
-  border: 1px solid red;
+}
+.header-container .header-logo{
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+	padding: 0.3rem 0.2rem;
+	box-sizing: border-box;
+}
+.header-container .header-logo .logo{
+	width: 1.84rem;
+	height: 0.48rem;
+	margin-right: 0.2rem;
+}
+.header-container .header-logo .header-text{
+	width: 3.84rem;
+	height: 0.37rem;
+}
+.header-container .header-logo .menu-btn{
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	top: 0.3rem;
+	right: 0.2rem;
+}
+.swiper-container{
+	width: 100%;
+	height: 3.4rem;
+}
+.swiper-container .swiper-slide{
+	background: #0056B3;
+}
+.swiper-pagination {
+	top: 86%;
+}
+.swiper-pagination .swiper-pagination-bullet{
+	width: 0.1rem;
+	height: 0.1rem;
+}
+.home-container{
+	background-color:#F0F0F0;
+}
+/* .home-container .title .span{
+	float: left;
+	display: block;
+	width: 12px;
+	height: 12px;
+	padding: 3px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background-color: #B3D2FC;
+	margin: 10px 40px;
+} 
+.home-container .title .span span{
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #67A3F8;
+}
+.home-container .title .text{
+	color: #4B4B4B;
+	font-size: 30px;
+	float: left;
+}
+.home-container .title{
+    height: 30px;
+    line-height: 30px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
+} */
+#item1{
+	background-color: #fff;
+	margin-top: 3.4rem;
+	height: 1.2rem;
+	width: 100%;
+	padding: 0.2rem 0.24rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: nowrap;
+	box-shadow: 0 0 0.06rem rgba(0,0,0,.16);
+}
+#item1 .list{
+	width: 2.2rem;
+	height: 0.8rem;
+	border: 1px solid #AAAAAA;
+	margin-right: 20px;
+	flex: 1;
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 0.1rem 0 0.1rem 0.3rem;
+	box-sizing: border-box;
+}
+#item1 .list:last-child{
+	margin-right: 0;
+}
+#item1 .list .box {
+	margin-top: -0.1rem;
+}
+#item1 .list img{
+	width: 0.6rem;
+	height: 0.6rem;
+	margin-right: 0.1rem;
+}
+#item1 .list .box span{
+	font-size: 0.26rem;
+	line-height: 0.26rem;
+	color: #333;
+}
+#item1 .list .box .text{
+	margin-top: 0.05rem;
+	font-size: 0.18rem;
+	line-height: 0.18rem;
+	color: #666;
+	white-space: nowrap;
+}
+#item2{
+	background-color: #fff;
+	margin-top: 0.15rem;
+}
+#item2 .title{
+	font-size: 0.3rem;
 }

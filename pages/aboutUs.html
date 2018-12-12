@@ -16,6 +16,21 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=WbnfbT34Bb2Ydp2BtIz0YCvsGNmU7OCv"></script>
 </head>
 <body>
+	<div class='header-container'>
+		<div class="header-logo">
+			<img class="logo" src="../images/logo.png" alt="">
+			<img class="header-text" src="../images/headertext.png" alt="">
+			<img class="menu-btn" src="../images/menubtn.png" alt="">
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">slider1</div>
+				<div class="swiper-slide">slider2</div>
+				<div class="swiper-slide">slider3</div>
+			</div>
+			<div class="swiper-pagination swiper-pagination-bullets" ></div>
+		</div>
+	</div>
     <div class="about">
         <div class="about-title">成都思学行教育科技有限公司</div>
         <div class="about-title-sub">SiXueXing Educational Technology Co., Ltd </div>
@@ -57,6 +72,11 @@
         var start = new BMap.Point(104.070309,30.589096);
         var end = new BMap.Point(104.063414,30.592151);
         walking.search(start, end);
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: 3000, //可选选项，自动滑动
+			pagination: '.swiper-pagination',
+			paginationType: 'bullets',
+		})
     </script>
 </body>
 </html>
