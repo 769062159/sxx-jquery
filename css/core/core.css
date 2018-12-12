@@ -83,6 +83,7 @@
 .core .content{
     margin-top: 1rem;
     position: relative;
+    height: 5rem;
 }
 .core .content .num{
     position: absolute;

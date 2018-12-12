@@ -95,6 +95,7 @@
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	z-index: 100;
 }
 .bottomBtn .btn-box{
 	flex: 1;
@@ -129,7 +130,7 @@
 	border-radius: 50%;
 	background-color: #B3D2FC;
 	margin: 10px 40px;
-} 
+}
 .home-container .title .span span{
 	display: block;
 	width: 6px;
