@@ -16,7 +16,7 @@
 	width: 2.2rem;
 	height: 0.8rem;
 	border: 1px solid #AAAAAA;
-	margin-right: 20px;
+	margin-right: 0.2rem;
 	flex: 1;
 	display: flex;
 	flex-wrap: nowrap;
@@ -27,7 +27,7 @@
 	margin-right: 0;
 }
 #item1 .list .box {
-	margin-top: -0.1rem;
+	
 }
 #item1 .list img{
 	width: 0.6rem;
@@ -40,7 +40,7 @@
 	color: #333;
 }
 #item1 .list .box .text{
-	margin-top: 0.05rem;
+	/* margin-top: 0.05rem; */
 	font-size: 0.18rem;
 	line-height: 0.18rem;
 	color: #666;
