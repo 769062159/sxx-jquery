@@ -21,7 +21,7 @@
 				<img class="header-text" src="images/headertext.png" alt="">
 				<img class="menu-btn" src="images/menubtn.png" alt="">
 			</div>
-			<div class="swiper-container">
+			<div class="swiper-container header-swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">slider1</div>
 					<div class="swiper-slide">slider2</div>
@@ -56,22 +56,32 @@
 				</div>
 			</div>
 			<div id="item2" class="publicBox">
-				<div class="title">热 门 课 程</div>
+				<div class="title" style="width: 2.5rem;"><i></i>热 门 课 程<i></i></div>
 				<div class="swiper-container item2-swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">Slide 1</div>
-						<div class="swiper-slide">Slide 2</div>
-						<div class="swiper-slide">Slide 3</div>
-						<div class="swiper-slide">Slide 4</div>
-						<div class="swiper-slide">Slide 5</div>
-						<div class="swiper-slide">Slide 6</div>
+						<div class="swiper-slide">
+							<img src="images/hot/img1.png" alt="">
+							<div class="text">区块链工程师</div>
+						</div>
+						<div class="swiper-slide"><img src="images/hot/img12.png" alt=""><div class="text">AI人工智能</div></div>
+						<div class="swiper-slide"><img src="images/hot/img3.png" alt=""><div class="text">Python工程师</div></div>
+						<div class="swiper-slide"><img src="images/hot/img4.png" alt=""><div class="text">JavascriptES6</div></div>
+						<div class="swiper-slide"><img src="images/hot/img5.png" alt=""><div class="text">C++工程师</div></div>
+						<div class="swiper-slide"><img src="images/hot/img6.png" alt=""><div class="text">GO语言</div></div>
+						<div class="swiper-slide"><img src="images/hot/img7.png" alt=""><div class="text">区块链工程师</div></div>
+						<div class="swiper-slide"><img src="images/hot/img8.png" alt=""><div class="text">区块链工程师</div></div>
+						<div class="swiper-slide"><img src="images/hot/img9.png" alt=""><div class="text">区块链工程师</div></div>
+						<div class="swiper-slide"><img src="images/hot/img10.png" alt=""><div class="text">区块链工程师</div></div>
+						<div class="swiper-slide"><img src="images/hot/img11.png" alt=""><div class="text">区块链工程师</div></div>
+						<div class="swiper-slide"><img src="images/hot/img2.png" alt=""><div class="text">区块链工程师</div></div>
 					</div>
 					<!-- Add Pagination -->
 					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 			<div id="item3" class="publicBox">
-				<div class="title">0 元 免 费 课 程</div>
+				<div class="title" style="width: 3.2rem;"><i></i>0 元 免 费 课 程<i></i></div>
+				<div class="text">知识共享，做真正实用的公开课</div>
 				<div class="item3-content">
 					<div class="list-box">
 						<img src="images/home/1.png" alt="">
@@ -92,7 +102,8 @@
 				</div>
 			</div>
 			<div id="item4" class="publicBox">
-				<div class="title">就 业 薪 资 大 数 据</div>
+				<div class="title" style="width: 3.7rem;"><i></i>就 业 薪 资 大 数 据<i></i></div>
+				<img src="images/home/data4.png" alt="">
 				<div class="lxcontent3 swiper-container">
 					<div class="swiper-wrapper">
 						<div class="lxitem swiper-slide">
@@ -105,10 +116,14 @@
 							<img src="images/home/data3.png" alt="">
 						</div>
 					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
+				<div class="text">中国互联网行业已具规模，并且发展迅猛，行业平均就业薪资高，但专业技术人才供需严重失衡，未来行业的发展亟待复合型及国际化人才的出现。</div>
 			</div>
 			<div id="item5" class="publicBox">
-				<div class="title">授 课 导 师</div>
+				<div class="title" style="width: 2.5rem;"><i></i>授 课 导 师<i></i></div>
+				<div class="text">顶尖高校教授研发课程，实名行业实战大牛授课</div>
 				<div class="item5content">
 					<div class="list">
 						<img src="images/home/teacher1.png" alt="">
@@ -128,7 +143,7 @@
 				</div>
 			</div>
 			<div id="item6" class="publicBox">
-				<div class="title">报 名 流 程</div>
+				<div class="title" style="width: 2.5rem;"><i></i>报 名 流 程<i></i></div>
 				<img src="images/BM.png" alt="">
 			</div>
 		</div>
@@ -162,18 +177,24 @@
 			</div>
 			<div class="btn-box">
 				<img src="images/footer/server.png" alt="">
-				<div class="text">咨询热线</div>
+				<a class="text" href="tel:400-000-000">咨询热线</a>
 			</div>
 		</div>
 	</body>
 	<script type="text/javascript">
-		var mySwiper = new Swiper('.swiper-container', {
+		var mySwiper = new Swiper('.header-swiper', {
 			autoplay: 3000, //可选选项，自动滑动
             loop: true,
 			pagination: '.swiper-pagination',
 			paginationType: 'bullets',
 		})
-        var certifySwiper = new Swiper('.lxcontent3', {
+        var swiper = new Swiper('.lxcontent3', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        /*var certifySwiper = new Swiper('.lxcontent3', {
             watchSlidesProgress: true,
             slidesPerView: 'auto',
             centeredSlides: true,
@@ -181,7 +202,7 @@
             loopedSlides: 6,
             grabCursor:true,
             slideToClickedSlide:true,
-            on: {
+            /!*on: {
                 progress: function(progress) {
                     for (i = 0; i < this.slides.length; i++) {
                         var slide = this.slides.eq(i);
@@ -208,9 +229,9 @@
                     }
 
                 }
-            }
-        });
-        var swiper = new Swiper('.item2-swiper', {
+            }*!/
+        });*/
+        var swiper1 = new Swiper('.item2-swiper', {
             slidesPerView: 3,
             slidesPerColumn: 2,
             spaceBetween: 30,
