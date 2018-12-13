@@ -55,8 +55,81 @@
 					</div>
 				</div>
 			</div>
-			<div id="item2">
-				<div class="title">热门课程</div>
+			<div id="item2" class="publicBox">
+				<div class="title">热 门 课 程</div>
+				<div class="swiper-container item2-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">Slide 4</div>
+						<div class="swiper-slide">Slide 5</div>
+						<div class="swiper-slide">Slide 6</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div id="item3" class="publicBox">
+				<div class="title">0 元 免 费 课 程</div>
+				<div class="item3-content">
+					<div class="list-box">
+						<img src="images/home/1.png" alt="">
+						<div class="content">
+							<div class="title">私有区块链，我们一起GO</div>
+							<div class="description">用Go语言实现一个区块链私有链</div>
+							<div class="text"><span>¥0.00  免费</span><s>原件¥99.00</s></div>
+						</div>
+					</div>
+					<div class="list-box">
+						<img src="images/home/2.png" alt="">
+						<div class="content">
+							<div class="title">私有区块链，我们一起GO</div>
+							<div class="description">用Go语言实现一个区块链私有链</div>
+							<div class="text"><span>¥0.00  免费</span><s>原件¥99.00</s></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item4" class="publicBox">
+				<div class="title">就 业 薪 资 大 数 据</div>
+				<div class="lxcontent3 swiper-container">
+					<div class="swiper-wrapper">
+						<div class="lxitem swiper-slide">
+							<img src="images/home/data1.png" alt="">
+						</div>
+						<div class="lxitem swiper-slide">
+							<img src="images/home/data2.png" alt="">
+						</div>
+						<div class="lxitem swiper-slide">
+							<img src="images/home/data3.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item5" class="publicBox">
+				<div class="title">授 课 导 师</div>
+				<div class="item5content">
+					<div class="list">
+						<img src="images/home/teacher1.png" alt="">
+						<div class="name">张小松</div>
+						<div class="title">长江学者特聘教授</div>
+					</div>
+					<div class="list">
+						<img src="images/home/teacher3.png" alt="">
+						<div class="name">桂勋</div>
+						<div class="title">思学行教务总监</div>
+					</div>
+					<div class="list">
+						<img src="images/home/teacher2.png" alt="">
+						<div class="name">姚兰</div>
+						<div class="title">成都信息工程大学副教授</div>
+					</div>
+				</div>
+			</div>
+			<div id="item6" class="publicBox">
+				<div class="title">报 名 流 程</div>
+				<img src="images/BM.png" alt="">
 			</div>
 		</div>
 		<div class="footer-container">
@@ -76,8 +149,7 @@
 			</div>
 		</div>
 		<div class="bottomText">
-			<p class="text">Copyright 2018sixuexing.com All Rights Reservde成都思学行教育科技有限公司
-			蜀ICP备18033964号</p>
+			<p class="text">Copyright 2018sixuexing.com All Rights Reservde成都思学行教育科技有限公司蜀ICP备18033964号</p>
 		</div>
 		<div class="bottomBtn">
 			<div class="btn-box">
@@ -97,8 +169,55 @@
 	<script type="text/javascript">
 		var mySwiper = new Swiper('.swiper-container', {
 			autoplay: 3000, //可选选项，自动滑动
+            loop: true,
 			pagination: '.swiper-pagination',
 			paginationType: 'bullets',
 		})
+        var certifySwiper = new Swiper('.lxcontent3', {
+            watchSlidesProgress: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 6,
+            grabCursor:true,
+            slideToClickedSlide:true,
+            on: {
+                progress: function(progress) {
+                    for (i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i);
+                        var slideProgress = this.slides[i].progress;
+                        modify = 1;
+                        if (Math.abs(slideProgress) > 1) {
+                            modify = (Math.abs(slideProgress) - 1) * 0.1 + 1;//0.3
+                        }
+                        translate = slideProgress * modify * 147 + 'px';//260
+                        scale = 1 - Math.abs(slideProgress) / 15;//5
+                        zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                        slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                        slide.css('zIndex', zIndex);
+                        slide.css('opacity', 1);
+                        if (Math.abs(slideProgress) > 3) {
+                            slide.css('opacity', 0);
+                        }
+                    }
+                },
+                setTransition: function(transition) {
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i)
+                        slide.transition(transition);
+                    }
+
+                }
+            }
+        });
+        var swiper = new Swiper('.item2-swiper', {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
 	</script>
 </html>
