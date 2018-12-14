@@ -1,3 +1,5 @@
+
+
 .home-container{
 	background-color:#F0F0F0;
 }
@@ -103,6 +105,14 @@
 	height: 4.2rem;
 	padding: 0.2rem 0.24rem;
 	box-sizing: border-box;
+	position: relative;
+}
+#item3 .more-btn{
+	position: absolute;
+	right: 0.1rem;
+	font-size: 0.22rem;
+	color: #999;
+	top: 0.9rem;
 }
 #item3>.text{
 	text-align: center;
