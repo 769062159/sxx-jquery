@@ -195,14 +195,14 @@
 	width: 100%;
 	background-color: #fff;
 	margin-top: 0.15rem;
-	height:6.5rem;
+	height:6.7rem;
 	padding: 0.2rem 0.24rem;
 	box-sizing: border-box;
 }
 #item4>img{
 	width: 5.2rem;
 	height: 0.26rem;
-	margin: 0 auto;
+	margin: 0.1rem auto;
 	display: block;
 }
 #item4>.text{
