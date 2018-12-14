@@ -3,7 +3,7 @@
     width: 100%;
     padding: 0.2rem 0.24rem;
     box-sizing: border-box;
-    border: 1px solid red;
+    background-color: #f7f7f7;
 }
 .courseListPage .video {
     display: flex;
@@ -117,14 +117,14 @@
     display: none;
 }
 .courseListPage .introduceContent.active{
-    margin-top: 0.2rem;
     display: block;
 }
 .courseListPage .box .introduceContent .head{
-    margin: 0.2rem auto;
+    margin: 0 auto;
+    padding-top: 0.2rem;
     display: block;
     width: 1.6rem;
-    height: 1.6rem;
+    height: 1.8rem;
 }
 .courseListPage .box .introduceContent .name{
     font-size: 0.26rem;
