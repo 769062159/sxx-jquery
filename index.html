@@ -34,9 +34,9 @@
 			</div>
 			<div class="swiper-container header-swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">slider1</div>
-					<div class="swiper-slide">slider2</div>
-					<div class="swiper-slide">slider3</div>
+					<div class="swiper-slide"><img src="images/home/home-banner.png" alt=""></div>
+					<div class="swiper-slide"><img src="images/home/home-banner.png" alt=""></div>
+					<div class="swiper-slide"><img src="images/home/home-banner.png" alt=""></div>
 				</div>
 				<div class="swiper-pagination swiper-pagination-bullets" ></div>
 			</div>
@@ -206,43 +206,7 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-        /*var certifySwiper = new Swiper('.lxcontent3', {
-            watchSlidesProgress: true,
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            loop: true,
-            loopedSlides: 6,
-            grabCursor:true,
-            slideToClickedSlide:true,
-            /!*on: {
-                progress: function(progress) {
-                    for (i = 0; i < this.slides.length; i++) {
-                        var slide = this.slides.eq(i);
-                        var slideProgress = this.slides[i].progress;
-                        modify = 1;
-                        if (Math.abs(slideProgress) > 1) {
-                            modify = (Math.abs(slideProgress) - 1) * 0.1 + 1;//0.3
-                        }
-                        translate = slideProgress * modify * 147 + 'px';//260
-                        scale = 1 - Math.abs(slideProgress) / 15;//5
-                        zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
-                        slide.transform('translateX(' + translate + ') scale(' + scale + ')');
-                        slide.css('zIndex', zIndex);
-                        slide.css('opacity', 1);
-                        if (Math.abs(slideProgress) > 3) {
-                            slide.css('opacity', 0);
-                        }
-                    }
-                },
-                setTransition: function(transition) {
-                    for (var i = 0; i < this.slides.length; i++) {
-                        var slide = this.slides.eq(i)
-                        slide.transition(transition);
-                    }
 
-                }
-            }*!/
-        });*/
         var swiper1 = new Swiper('.item2-swiper', {
             slidesPerView: 3,
             slidesPerColumn: 2,
